@@ -52,19 +52,6 @@ Install JupyterLab in your base anaconda environment:
 conda install -c conda-forge jupyterlab
 ```
 
-To launch JupyterLab:
-```commandline
-jupyter-lab
-```
-
-If this does not work and you get a 404 error try:
-```commandline
-jupyter serverextension enable --py jupyterlab --user
-```
-```commandline
-conda install -c conda-forge nodejs
-```
-
 To make your environment accessible in JupyterLab, first activate your environment (see above) and run:
 ```commandline
 conda install -c anaconda ipykernel
@@ -72,3 +59,20 @@ conda install -c anaconda ipykernel
 ```commandline
 python -m ipykernel install --user --name=behavior_analysis_training
 ```
+
+To launch JupyterLab:
+```commandline
+jupyter-lab
+```
+
+If this does not work and you get a 404 error try running the following in your base conda environment:
+```commandline
+jupyter serverextension enable --py jupyterlab --user
+```
+```commandline
+conda install -c conda-forge nodejs
+```
+
+# Tutorial
+
+To run the tutorial, open the `tutorial.ipynb` in JupyterLab and set the environment to `behavior_analysis_training`.
