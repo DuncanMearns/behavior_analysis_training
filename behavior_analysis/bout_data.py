@@ -148,7 +148,7 @@ class BoutData(PCA):
         return BoutData(sliced, df)
 
     def _get_from_dict(self, idxs=(), **kwargs):
-        index_values = dict(IDs=slice(None), codes=slice(None), bout_indices=slice(None))
+        index_values = dict(IDs=slice(None), video_codes=slice(None), bout_indices=slice(None))
         for key, val in kwargs.items():
             if len(val):
                 index_values[key] = val
