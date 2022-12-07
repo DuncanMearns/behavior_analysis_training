@@ -1,0 +1,11 @@
+name: behavior_analysis_training
+channels:
+  - conda-forge
+dependencies:
+  - python=3.9
+  - numpy
+  - pandas
+  - opencv
+  - scipy
+  - scikit-learn
+  - matplotlib
